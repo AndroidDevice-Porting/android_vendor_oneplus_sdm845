@@ -51,10 +51,9 @@ PRODUCT_COPY_FILES += \
      vendor/oneplus/sdm845-common/proprietary/etc/permissions/embms.xml:system/etc/permissions/embms.xml \
      vendor/oneplus/sdm845-common/proprietary/etc/permissions/izat.xt.srv.xml:system/etc/permissions/izat.xt.srv.xml \
      vendor/oneplus/sdm845-common/proprietary/etc/permissions/privapp-permissions-com.qualcomm.location.xml:system/etc/permissions/privapp-permissions-com.qualcomm.location.xml \
+     vendor/oneplus/sdm845-common/proprietary/etc/permissions/privapp-permissions-oem.xml:system/etc/permissions/privapp-permissions-oem.xml \
      vendor/oneplus/sdm845-common/proprietary/etc/permissions/privapp-permissions-qti.xml:system/etc/permissions/privapp-permissions-qti.xml \
      vendor/oneplus/sdm845-common/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
-     vendor/oneplus/sdm845-common/proprietary/framework/qcrilhook.jar:system/framework/qcrilhook.jar \
-     vendor/oneplus/sdm845-common/proprietary/framework/WfdCommon.jar:system/framework/WfdCommon.jar \
      vendor/oneplus/sdm845-common/proprietary/etc/permissions/qti_libpermissions.xml:system/etc/permissions/qti_libpermissions.xml \
      vendor/oneplus/sdm845-common/proprietary/etc/permissions/qti_permissions.xml:system/etc/permissions/qti_permissions.xml \
      vendor/oneplus/sdm845-common/proprietary/etc/public.libraries-qti.txt:system/etc/public.libraries-qti.txt \
@@ -158,7 +157,6 @@ PRODUCT_COPY_FILES += \
      vendor/oneplus/sdm845-common/proprietary/framework/vendor.qti.hardware.soter-V1.0-java.jar:system/framework/vendor.qti.hardware.soter-V1.0-java.jar \
      vendor/oneplus/sdm845-common/proprietary/framework/vendor.qti.ims.callinfo-V1.0-java.jar:system/framework/vendor.qti.ims.callinfo-V1.0-java.jar \
      vendor/oneplus/sdm845-common/proprietary/framework/vendor.qti.voiceprint-V1.0-java.jar:system/framework/vendor.qti.voiceprint-V1.0-java.jar \
-     vendor/oneplus/sdm845-common/proprietary/lib/egl/libGLES_android.so:system/lib/egl/libGLES_android.so \
      vendor/oneplus/sdm845-common/proprietary/lib/android.hardware.light@2.0.so:system/lib/android.hardware.light@2.0.so \
      vendor/oneplus/sdm845-common/proprietary/lib/com.qualcomm.qti.ant@1.0.so:system/lib/com.qualcomm.qti.ant@1.0.so \
      vendor/oneplus/sdm845-common/proprietary/lib/com.qualcomm.qti.bluetooth_audio@1.0.so:system/lib/com.qualcomm.qti.bluetooth_audio@1.0.so \
@@ -219,6 +217,7 @@ PRODUCT_COPY_FILES += \
      vendor/oneplus/sdm845-common/proprietary/lib/libmmrtpdecoder.so:system/lib/libmmrtpdecoder.so \
      vendor/oneplus/sdm845-common/proprietary/lib/libmmrtpencoder.so:system/lib/libmmrtpencoder.so \
      vendor/oneplus/sdm845-common/proprietary/lib/libnl.so:system/lib/libnl.so \
+     vendor/oneplus/sdm845-common/proprietary/lib/libopcameralib-em.so:system/lib/libopcameralib-em.so \
      vendor/oneplus/sdm845-common/proprietary/lib/liboptizoom.so:system/lib/liboptizoom.so \
      vendor/oneplus/sdm845-common/proprietary/lib/libqdMetaData.system.so:system/lib/libqdMetaData.system.so \
      vendor/oneplus/sdm845-common/proprietary/lib/libqmi_cci_system.so:system/lib/libqmi_cci_system.so \
@@ -302,6 +301,18 @@ PRODUCT_COPY_FILES += \
      vendor/oneplus/sdm845-common/proprietary/lib/vendor.qti.hardware.perf@1.0.so:system/lib/vendor.qti.hardware.perf@1.0.so \
      vendor/oneplus/sdm845-common/proprietary/lib/vendor.qti.hardware.qdutils_disp@1.0.so:system/lib/vendor.qti.hardware.qdutils_disp@1.0.so \
      vendor/oneplus/sdm845-common/proprietary/lib/vendor.qti.hardware.qteeconnector@1.0.so:system/lib/vendor.qti.hardware.qteeconnector@1.0.so \
+     vendor/oneplus/sdm845-common/proprietary/lib/vendor.qti.hardware.radio.am@1.0.so:system/lib/vendor.qti.hardware.radio.am@1.0.so \
+     vendor/oneplus/sdm845-common/proprietary/lib/vendor.qti.hardware.radio.ims@1.0.so:system/lib/vendor.qti.hardware.radio.ims@1.0.so \
+     vendor/oneplus/sdm845-common/proprietary/lib/vendor.qti.hardware.radio.ims@1.1.so:system/lib/vendor.qti.hardware.radio.ims@1.1.so \
+     vendor/oneplus/sdm845-common/proprietary/lib/vendor.qti.hardware.radio.ims@1.2.so:system/lib/vendor.qti.hardware.radio.ims@1.2.so \
+     vendor/oneplus/sdm845-common/proprietary/lib/vendor.qti.hardware.radio.ims@1.3.so:system/lib/vendor.qti.hardware.radio.ims@1.3.so \
+     vendor/oneplus/sdm845-common/proprietary/lib/vendor.qti.hardware.radio.lpa@1.0.so:system/lib/vendor.qti.hardware.radio.lpa@1.0.so \
+     vendor/oneplus/sdm845-common/proprietary/lib/vendor.qti.hardware.radio.qcrilhook@1.0.so:system/lib/vendor.qti.hardware.radio.qcrilhook@1.0.so \
+     vendor/oneplus/sdm845-common/proprietary/lib/vendor.qti.hardware.radio.qtiradio@1.0.so:system/lib/vendor.qti.hardware.radio.qtiradio@1.0.so \
+     vendor/oneplus/sdm845-common/proprietary/lib/vendor.qti.hardware.radio.uim@1.0.so:system/lib/vendor.qti.hardware.radio.uim@1.0.so \
+     vendor/oneplus/sdm845-common/proprietary/lib/vendor.qti.hardware.radio.uim@1.1.so:system/lib/vendor.qti.hardware.radio.uim@1.1.so \
+     vendor/oneplus/sdm845-common/proprietary/lib/vendor.qti.hardware.radio.uim_remote_client@1.0.so:system/lib/vendor.qti.hardware.radio.uim_remote_client@1.0.so \
+     vendor/oneplus/sdm845-common/proprietary/lib/vendor.qti.hardware.radio.uim_remote_server@1.0.so:system/lib/vendor.qti.hardware.radio.uim_remote_server@1.0.so \
      vendor/oneplus/sdm845-common/proprietary/lib/vendor.qti.hardware.scve.panorama@1.0-adapter-helper.so:system/lib/vendor.qti.hardware.scve.panorama@1.0-adapter-helper.so \
      vendor/oneplus/sdm845-common/proprietary/lib/vendor.qti.hardware.scve.panorama@1.0.so:system/lib/vendor.qti.hardware.scve.panorama@1.0.so \
      vendor/oneplus/sdm845-common/proprietary/lib/vendor.qti.hardware.sensorscalibrate@1.0.so:system/lib/vendor.qti.hardware.sensorscalibrate@1.0.so \
@@ -374,6 +385,7 @@ PRODUCT_COPY_FILES += \
      vendor/oneplus/sdm845-common/proprietary/lib64/libmmparser_lite.so:system/lib64/libmmparser_lite.so \
      vendor/oneplus/sdm845-common/proprietary/lib64/libmmrtpdecoder.so:system/lib64/libmmrtpdecoder.so \
      vendor/oneplus/sdm845-common/proprietary/lib64/libmmrtpencoder.so:system/lib64/libmmrtpencoder.so \
+     vendor/oneplus/sdm845-common/proprietary/lib64/libopcameralib-em.so:system/lib64/libopcameralib-em.so \
      vendor/oneplus/sdm845-common/proprietary/lib64/liboptizoom.so:system/lib64/liboptizoom.so \
      vendor/oneplus/sdm845-common/proprietary/lib64/libqdMetaData.system.so:system/lib64/libqdMetaData.system.so \
      vendor/oneplus/sdm845-common/proprietary/lib64/libqmi_cci_system.so:system/lib64/libqmi_cci_system.so \
@@ -428,6 +440,18 @@ PRODUCT_COPY_FILES += \
      vendor/oneplus/sdm845-common/proprietary/lib64/vendor.qti.hardware.perf@1.0.so:system/lib64/vendor.qti.hardware.perf@1.0.so \
      vendor/oneplus/sdm845-common/proprietary/lib64/vendor.qti.hardware.qdutils_disp@1.0.so:system/lib64/vendor.qti.hardware.qdutils_disp@1.0.so \
      vendor/oneplus/sdm845-common/proprietary/lib64/vendor.qti.hardware.qteeconnector@1.0.so:system/lib64/vendor.qti.hardware.qteeconnector@1.0.so \
+     vendor/oneplus/sdm845-common/proprietary/lib64/vendor.qti.hardware.radio.am@1.0.so:system/lib64/vendor.qti.hardware.radio.am@1.0.so \
+     vendor/oneplus/sdm845-common/proprietary/lib64/vendor.qti.hardware.radio.ims@1.0.so:system/lib64/vendor.qti.hardware.radio.ims@1.0.so \
+     vendor/oneplus/sdm845-common/proprietary/lib64/vendor.qti.hardware.radio.ims@1.1.so:system/lib64/vendor.qti.hardware.radio.ims@1.1.so \
+     vendor/oneplus/sdm845-common/proprietary/lib64/vendor.qti.hardware.radio.ims@1.2.so:system/lib64/vendor.qti.hardware.radio.ims@1.2.so \
+     vendor/oneplus/sdm845-common/proprietary/lib64/vendor.qti.hardware.radio.ims@1.3.so:system/lib64/vendor.qti.hardware.radio.ims@1.3.so \
+     vendor/oneplus/sdm845-common/proprietary/lib64/vendor.qti.hardware.radio.lpa@1.0.so:system/lib64/vendor.qti.hardware.radio.lpa@1.0.so \
+     vendor/oneplus/sdm845-common/proprietary/lib64/vendor.qti.hardware.radio.qcrilhook@1.0.so:system/lib64/vendor.qti.hardware.radio.qcrilhook@1.0.so \
+     vendor/oneplus/sdm845-common/proprietary/lib64/vendor.qti.hardware.radio.qtiradio@1.0.so:system/lib64/vendor.qti.hardware.radio.qtiradio@1.0.so \
+     vendor/oneplus/sdm845-common/proprietary/lib64/vendor.qti.hardware.radio.uim@1.0.so:system/lib64/vendor.qti.hardware.radio.uim@1.0.so \
+     vendor/oneplus/sdm845-common/proprietary/lib64/vendor.qti.hardware.radio.uim@1.1.so:system/lib64/vendor.qti.hardware.radio.uim@1.1.so \
+     vendor/oneplus/sdm845-common/proprietary/lib64/vendor.qti.hardware.radio.uim_remote_client@1.0.so:system/lib64/vendor.qti.hardware.radio.uim_remote_client@1.0.so \
+     vendor/oneplus/sdm845-common/proprietary/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so:system/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so \
      vendor/oneplus/sdm845-common/proprietary/lib64/vendor.qti.hardware.scve.panorama@1.0-adapter-helper.so:system/lib64/vendor.qti.hardware.scve.panorama@1.0-adapter-helper.so \
      vendor/oneplus/sdm845-common/proprietary/lib64/vendor.qti.hardware.scve.panorama@1.0.so:system/lib64/vendor.qti.hardware.scve.panorama@1.0.so \
      vendor/oneplus/sdm845-common/proprietary/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so:system/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so \
@@ -444,11 +468,20 @@ PRODUCT_PACKAGES += \
     HotwordEnrollmentOKGoogleWCD9340 \
     HotwordEnrollmentXGoogleWCD9340 \
     com.qti.location.sdk \
+    com.qti.snapdragon.sdk.display \
+    com.qualcomm.qti.camera \
     com.qualcomm.qti.imscmservice-V2.0-java \
     com.qualcomm.qti.imscmservice-V2.1-java \
     com.qualcomm.qti.uceservice-V2.0-java \
+    vendor.oneplus.camera.CameraHIDL-V1.0-java \
+    vendor.qti.hardware.data.latency-V1.0-java \
+    vendor.qti.hardware.sensorscalibrate-V1.0-java \
     vendor.qti.ims.rcsconfig-V1.0-java \
-    dashd \
+    dashd
+
+ifeq ($(QCPATH),)
+
+PRODUCT_PACKAGES += \
     AntHalService \
     QtiSystemService \
     QtiTelephonyService \
@@ -466,3 +499,8 @@ PRODUCT_PACKAGES += \
     com.qti.dpmframework \
     qcnvitems \
     qcrilhook
+endif
+
+-include vendor/extra/devices.mk
+ifneq ($(call is-qc-perf-target),true)
+endif
