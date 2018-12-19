@@ -32,6 +32,7 @@ PRODUCT_COPY_FILES += \
      vendor/oneplus/sdm845-common/proprietary/etc/permissions/LteDirectDiscovery.xml:system/etc/permissions/LteDirectDiscovery.xml \
      vendor/oneplus/sdm845-common/proprietary/etc/permissions/RemoteSimlock.xml:system/etc/permissions/RemoteSimlock.xml \
      vendor/oneplus/sdm845-common/proprietary/etc/permissions/UimService.xml:system/etc/permissions/UimService.xml \
+     vendor/oneplus/sdm845-common/proprietary/etc/permissions/uimremoteclient.xml:system/etc/permissions/uimremoteclient.xml \
      vendor/oneplus/sdm845-common/proprietary/etc/permissions/audiosphere.xml:system/etc/permissions/audiosphere.xml \
      vendor/oneplus/sdm845-common/proprietary/etc/permissions/cneapiclient.xml:system/etc/permissions/cneapiclient.xml \
      vendor/oneplus/sdm845-common/proprietary/etc/permissions/com.nxp.nfc.xml:system/etc/permissions/com.nxp.nfc.xml \
@@ -50,12 +51,15 @@ PRODUCT_COPY_FILES += \
      vendor/oneplus/sdm845-common/proprietary/etc/permissions/dpmapi.xml:system/etc/permissions/dpmapi.xml \
      vendor/oneplus/sdm845-common/proprietary/etc/permissions/embms.xml:system/etc/permissions/embms.xml \
      vendor/oneplus/sdm845-common/proprietary/etc/permissions/izat.xt.srv.xml:system/etc/permissions/izat.xt.srv.xml \
+     vendor/oneplus/sdm845-common/proprietary/etc/permissions/oneplus_sdk_utils.xml:system/etc/permissions/oneplus_sdk_utils.xml \
+     vendor/oneplus/sdm845-common/proprietary/etc/permissions/oneplus_sdk_wrapper.xml:system/etc/permissions/oneplus_sdk_wrapper.xml \
      vendor/oneplus/sdm845-common/proprietary/etc/permissions/privapp-permissions-com.qualcomm.location.xml:system/etc/permissions/privapp-permissions-com.qualcomm.location.xml \
      vendor/oneplus/sdm845-common/proprietary/etc/permissions/privapp-permissions-oem.xml:system/etc/permissions/privapp-permissions-oem.xml \
      vendor/oneplus/sdm845-common/proprietary/etc/permissions/privapp-permissions-qti.xml:system/etc/permissions/privapp-permissions-qti.xml \
      vendor/oneplus/sdm845-common/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
      vendor/oneplus/sdm845-common/proprietary/etc/permissions/qti_libpermissions.xml:system/etc/permissions/qti_libpermissions.xml \
      vendor/oneplus/sdm845-common/proprietary/etc/permissions/qti_permissions.xml:system/etc/permissions/qti_permissions.xml \
+     vendor/oneplus/sdm845-common/proprietary/etc/permissions/telephonyservice.xml:system/etc/permissions/telephonyservice.xml \
      vendor/oneplus/sdm845-common/proprietary/etc/public.libraries-qti.txt:system/etc/public.libraries-qti.txt \
      vendor/oneplus/sdm845-common/proprietary/etc/qvr/ov7251_640x480_cam_config.xml:system/etc/qvr/ov7251_640x480_cam_config.xml \
      vendor/oneplus/sdm845-common/proprietary/etc/qvr/ov9282_640x400_cam_config.xml:system/etc/qvr/ov9282_640x400_cam_config.xml \
@@ -157,6 +161,34 @@ PRODUCT_COPY_FILES += \
      vendor/oneplus/sdm845-common/proprietary/framework/vendor.qti.hardware.soter-V1.0-java.jar:system/framework/vendor.qti.hardware.soter-V1.0-java.jar \
      vendor/oneplus/sdm845-common/proprietary/framework/vendor.qti.ims.callinfo-V1.0-java.jar:system/framework/vendor.qti.ims.callinfo-V1.0-java.jar \
      vendor/oneplus/sdm845-common/proprietary/framework/vendor.qti.voiceprint-V1.0-java.jar:system/framework/vendor.qti.voiceprint-V1.0-java.jar \
+     vendor/oneplus/sdm845-common/proprietary/framework/oneplus_sdk_utils.jar:system/framework/oneplus_sdk_utils.jar \
+     vendor/oneplus/sdm845-common/proprietary/framework/oneplus_sdk_wrapper.jar:system/framework/oneplus_sdk_wrapper.jar \
+     vendor/oneplus/sdm845-common/proprietary/framework/vendor.oneplus.fingerprint.extension-V1.0-java.jar:system/framework/vendor.oneplus.fingerprint.extension-V1.0-java.jar \
+     vendor/oneplus/sdm845-common/proprietary/framework/vendor.oneplus.hardware.param-V1.0-java.jar:system/framework/vendor.oneplus.hardware.param-V1.0-java.jar \
+     vendor/oneplus/sdm845-common/proprietary/framework/arm/boot-oneplus_sdk_utils.art:system/framework/arm/boot-oneplus_sdk_utils.art \
+     vendor/oneplus/sdm845-common/proprietary/framework/arm/boot-oneplus_sdk_utils.art.rel:system/framework/arm/boot-oneplus_sdk_utils.art.rel \
+     vendor/oneplus/sdm845-common/proprietary/framework/arm/boot-oneplus_sdk_utils.oat:system/framework/arm/boot-oneplus_sdk_utils.oat \
+     vendor/oneplus/sdm845-common/proprietary/framework/arm/boot-oneplus_sdk_utils.vdex:system/framework/arm/boot-oneplus_sdk_utils.vdex \
+     vendor/oneplus/sdm845-common/proprietary/framework/arm/boot-oneplus_sdk_wrapper.art:system/framework/arm/boot-oneplus_sdk_wrapper.art \
+     vendor/oneplus/sdm845-common/proprietary/framework/arm/boot-oneplus_sdk_wrapper.art.rel:system/framework/arm/boot-oneplus_sdk_wrapper.art.rel \
+     vendor/oneplus/sdm845-common/proprietary/framework/arm/boot-oneplus_sdk_wrapper.oat:system/framework/arm/boot-oneplus_sdk_wrapper.oat \
+     vendor/oneplus/sdm845-common/proprietary/framework/arm/boot-oneplus_sdk_wrapper.vdex:system/framework/arm/boot-oneplus_sdk_wrapper.vdex \
+     vendor/oneplus/sdm845-common/proprietary/framework/arm64/boot-oneplus_sdk_utils.art:system/framework/arm64/boot-oneplus_sdk_utils.art \
+     vendor/oneplus/sdm845-common/proprietary/framework/arm64/boot-oneplus_sdk_utils.art.rel:system/framework/arm64/boot-oneplus_sdk_utils.art.rel \
+     vendor/oneplus/sdm845-common/proprietary/framework/arm64/boot-oneplus_sdk_utils.oat:system/framework/arm64/boot-oneplus_sdk_utils.oat \
+     vendor/oneplus/sdm845-common/proprietary/framework/arm64/boot-oneplus_sdk_utils.vdex:system/framework/arm64/boot-oneplus_sdk_utils.vdex \
+     vendor/oneplus/sdm845-common/proprietary/framework/arm64/boot-oneplus_sdk_wrapper.art:system/framework/arm64/boot-oneplus_sdk_wrapper.art \
+     vendor/oneplus/sdm845-common/proprietary/framework/arm64/boot-oneplus_sdk_wrapper.art.rel:system/framework/arm64/boot-oneplus_sdk_wrapper.art.rel \
+     vendor/oneplus/sdm845-common/proprietary/framework/arm64/boot-oneplus_sdk_wrapper.oat:system/framework/arm64/boot-oneplus_sdk_wrapper.oat \
+     vendor/oneplus/sdm845-common/proprietary/framework/arm64/boot-oneplus_sdk_wrapper.vdex:system/framework/arm64/boot-oneplus_sdk_wrapper.vdex \
+     vendor/oneplus/sdm845-common/proprietary/framework/oat/arm/vendor.oneplus.fingerprint.extension-V1.0-java.odex:system/framework/oat/arm/vendor.oneplus.fingerprint.extension-V1.0-java.odex \
+     vendor/oneplus/sdm845-common/proprietary/framework/oat/arm/vendor.oneplus.fingerprint.extension-V1.0-java.vdex:system/framework/oat/arm/vendor.oneplus.fingerprint.extension-V1.0-java.vdex \
+     vendor/oneplus/sdm845-common/proprietary/framework/oat/arm/vendor.oneplus.hardware.param-V1.0-java.odex:system/framework/oat/arm/vendor.oneplus.hardware.param-V1.0-java.odex \
+     vendor/oneplus/sdm845-common/proprietary/framework/oat/arm/vendor.oneplus.hardware.param-V1.0-java.vdex:system/framework/oat/arm/vendor.oneplus.hardware.param-V1.0-java.vdex \
+     vendor/oneplus/sdm845-common/proprietary/framework/oat/arm64/vendor.oneplus.fingerprint.extension-V1.0-java.odex:system/framework/oat/arm64/vendor.oneplus.fingerprint.extension-V1.0-java.odex \
+     vendor/oneplus/sdm845-common/proprietary/framework/oat/arm64/vendor.oneplus.fingerprint.extension-V1.0-java.vdex:system/framework/oat/arm64/vendor.oneplus.fingerprint.extension-V1.0-java.vdex \
+     vendor/oneplus/sdm845-common/proprietary/framework/oat/arm64/vendor.oneplus.hardware.param-V1.0-java.odex:system/framework/oat/arm64/vendor.oneplus.hardware.param-V1.0-java.odex \
+     vendor/oneplus/sdm845-common/proprietary/framework/oat/arm64/vendor.oneplus.hardware.param-V1.0-java.vdex:system/framework/oat/arm64/vendor.oneplus.hardware.param-V1.0-java.vdex \
      vendor/oneplus/sdm845-common/proprietary/lib/android.hardware.light@2.0.so:system/lib/android.hardware.light@2.0.so \
      vendor/oneplus/sdm845-common/proprietary/lib/com.qualcomm.qti.ant@1.0.so:system/lib/com.qualcomm.qti.ant@1.0.so \
      vendor/oneplus/sdm845-common/proprietary/lib/com.qualcomm.qti.bluetooth_audio@1.0.so:system/lib/com.qualcomm.qti.bluetooth_audio@1.0.so \
