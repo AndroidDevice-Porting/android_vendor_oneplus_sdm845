@@ -165,30 +165,6 @@ PRODUCT_COPY_FILES += \
      vendor/oneplus/sdm845-common/proprietary/framework/oneplus_sdk_wrapper.jar:system/framework/oneplus_sdk_wrapper.jar \
      vendor/oneplus/sdm845-common/proprietary/framework/vendor.oneplus.fingerprint.extension-V1.0-java.jar:system/framework/vendor.oneplus.fingerprint.extension-V1.0-java.jar \
      vendor/oneplus/sdm845-common/proprietary/framework/vendor.oneplus.hardware.param-V1.0-java.jar:system/framework/vendor.oneplus.hardware.param-V1.0-java.jar \
-     vendor/oneplus/sdm845-common/proprietary/framework/arm/boot-oneplus_sdk_utils.art:system/framework/arm/boot-oneplus_sdk_utils.art \
-     vendor/oneplus/sdm845-common/proprietary/framework/arm/boot-oneplus_sdk_utils.art.rel:system/framework/arm/boot-oneplus_sdk_utils.art.rel \
-     vendor/oneplus/sdm845-common/proprietary/framework/arm/boot-oneplus_sdk_utils.oat:system/framework/arm/boot-oneplus_sdk_utils.oat \
-     vendor/oneplus/sdm845-common/proprietary/framework/arm/boot-oneplus_sdk_utils.vdex:system/framework/arm/boot-oneplus_sdk_utils.vdex \
-     vendor/oneplus/sdm845-common/proprietary/framework/arm/boot-oneplus_sdk_wrapper.art:system/framework/arm/boot-oneplus_sdk_wrapper.art \
-     vendor/oneplus/sdm845-common/proprietary/framework/arm/boot-oneplus_sdk_wrapper.art.rel:system/framework/arm/boot-oneplus_sdk_wrapper.art.rel \
-     vendor/oneplus/sdm845-common/proprietary/framework/arm/boot-oneplus_sdk_wrapper.oat:system/framework/arm/boot-oneplus_sdk_wrapper.oat \
-     vendor/oneplus/sdm845-common/proprietary/framework/arm/boot-oneplus_sdk_wrapper.vdex:system/framework/arm/boot-oneplus_sdk_wrapper.vdex \
-     vendor/oneplus/sdm845-common/proprietary/framework/arm64/boot-oneplus_sdk_utils.art:system/framework/arm64/boot-oneplus_sdk_utils.art \
-     vendor/oneplus/sdm845-common/proprietary/framework/arm64/boot-oneplus_sdk_utils.art.rel:system/framework/arm64/boot-oneplus_sdk_utils.art.rel \
-     vendor/oneplus/sdm845-common/proprietary/framework/arm64/boot-oneplus_sdk_utils.oat:system/framework/arm64/boot-oneplus_sdk_utils.oat \
-     vendor/oneplus/sdm845-common/proprietary/framework/arm64/boot-oneplus_sdk_utils.vdex:system/framework/arm64/boot-oneplus_sdk_utils.vdex \
-     vendor/oneplus/sdm845-common/proprietary/framework/arm64/boot-oneplus_sdk_wrapper.art:system/framework/arm64/boot-oneplus_sdk_wrapper.art \
-     vendor/oneplus/sdm845-common/proprietary/framework/arm64/boot-oneplus_sdk_wrapper.art.rel:system/framework/arm64/boot-oneplus_sdk_wrapper.art.rel \
-     vendor/oneplus/sdm845-common/proprietary/framework/arm64/boot-oneplus_sdk_wrapper.oat:system/framework/arm64/boot-oneplus_sdk_wrapper.oat \
-     vendor/oneplus/sdm845-common/proprietary/framework/arm64/boot-oneplus_sdk_wrapper.vdex:system/framework/arm64/boot-oneplus_sdk_wrapper.vdex \
-     vendor/oneplus/sdm845-common/proprietary/framework/oat/arm/vendor.oneplus.fingerprint.extension-V1.0-java.odex:system/framework/oat/arm/vendor.oneplus.fingerprint.extension-V1.0-java.odex \
-     vendor/oneplus/sdm845-common/proprietary/framework/oat/arm/vendor.oneplus.fingerprint.extension-V1.0-java.vdex:system/framework/oat/arm/vendor.oneplus.fingerprint.extension-V1.0-java.vdex \
-     vendor/oneplus/sdm845-common/proprietary/framework/oat/arm/vendor.oneplus.hardware.param-V1.0-java.odex:system/framework/oat/arm/vendor.oneplus.hardware.param-V1.0-java.odex \
-     vendor/oneplus/sdm845-common/proprietary/framework/oat/arm/vendor.oneplus.hardware.param-V1.0-java.vdex:system/framework/oat/arm/vendor.oneplus.hardware.param-V1.0-java.vdex \
-     vendor/oneplus/sdm845-common/proprietary/framework/oat/arm64/vendor.oneplus.fingerprint.extension-V1.0-java.odex:system/framework/oat/arm64/vendor.oneplus.fingerprint.extension-V1.0-java.odex \
-     vendor/oneplus/sdm845-common/proprietary/framework/oat/arm64/vendor.oneplus.fingerprint.extension-V1.0-java.vdex:system/framework/oat/arm64/vendor.oneplus.fingerprint.extension-V1.0-java.vdex \
-     vendor/oneplus/sdm845-common/proprietary/framework/oat/arm64/vendor.oneplus.hardware.param-V1.0-java.odex:system/framework/oat/arm64/vendor.oneplus.hardware.param-V1.0-java.odex \
-     vendor/oneplus/sdm845-common/proprietary/framework/oat/arm64/vendor.oneplus.hardware.param-V1.0-java.vdex:system/framework/oat/arm64/vendor.oneplus.hardware.param-V1.0-java.vdex \
      vendor/oneplus/sdm845-common/proprietary/lib/android.hardware.light@2.0.so:system/lib/android.hardware.light@2.0.so \
      vendor/oneplus/sdm845-common/proprietary/lib/com.qualcomm.qti.ant@1.0.so:system/lib/com.qualcomm.qti.ant@1.0.so \
      vendor/oneplus/sdm845-common/proprietary/lib/com.qualcomm.qti.bluetooth_audio@1.0.so:system/lib/com.qualcomm.qti.bluetooth_audio@1.0.so \
